@@ -1,0 +1,60 @@
+body{
+  background-image: linear-gradient(cyan,pink);
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: black;
+}
+
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+button{
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient(to right, #f6d365, #fda085); /* Linear gradient */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover{
+  box-shadow: 0 0 20px rgba(253, 160, 133, 0.8), 0 0 40px rgba(253, 160, 133, 0.6); /* Glowing effect */
+  transform: scale(1.05); /* Slightly scale up the button */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.task-item.completed{
+  text-decoration: line-through;
+}
+
+.task-item{
+  text-decoration: none;
+}
